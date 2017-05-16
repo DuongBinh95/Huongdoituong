@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng nhiều chiều</title>
+</head>
+<body>
+<script>
+    var cities = [
+        ['HaNoi' , 'SaiGon' , 'DaNang'],
+        ['NewYork','California','Miami']
+    ];
+    var citiesName = [0][1];/* do dai cua mang cities*/
+    var n = cities.length;/* n co gia tri la 2(do dai cua mang cities)*/
+    var m = cities[0].length; /* m co gia tri la 3(do dai cua mang cities)*/
+    for(i= 0 ; i<cities.length;i++){
+        for(j =0 ; j<cities[0].length ; j++)
+        {
+            document.write(cities[i][j] + '<br/>');
+        }
+    }
+</script>
+
+</body>
+</html>
