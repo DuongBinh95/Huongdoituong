@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng hàm</title>
+</head>
+<body>
+    <script>
+        function Apple(type) {
+            this.type = type;
+            this.color = "red";
+        }
+        Apple.prototype.getInfo = function () {
+            return this.type +'' + this.color ;
+        }
+        var apple = new Apple('Duong');
+        apple.color = "red";
+        alert(apple.getInfo());
+    </script>
+</body>
+</html>
